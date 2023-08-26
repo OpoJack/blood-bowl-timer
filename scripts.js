@@ -56,7 +56,7 @@ function updateDisplay() {
       audioFinal.play();
       finalAudioPlayed = true;
     }
-  } else if (remainingTime < 60 * 60) {
+  } else if (remainingTime < 4050) {  // Changed to 4050 seconds for 01:07:30
     timeDisplay.style.color = 'yellow';
     if (!halftimeAudioPlayed) {
       audioHalftime.play();
@@ -68,6 +68,7 @@ function updateDisplay() {
     finalAudioPlayed = false;
   }
 }
+
 
 // Function to start or pause the timer
 function toggleTimer() {
